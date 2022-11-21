@@ -1,0 +1,131 @@
+.wrapper {
+    text-align: center;
+}
+
+.signup {
+    width: 635px;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0px 10px 50px 0px rgba(200,200,200,0.7);
+    border-radius: 20px;
+    padding: 49px;
+    margin: 30px auto;
+}
+
+.signup h1 {
+    font-weight: bold;
+    font-size: 170%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.signup .personal-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.signup .personal-details label {
+    position: relative;
+    margin: 22px 0;
+}
+
+.signup .personal-details label:nth-of-type(1),
+.signup .personal-details  label:nth-of-type(2){
+    flex-basis: 49%;
+}
+.signup .personal-details label:nth-of-type(1) {
+    margin-right: 2%;
+}
+
+.signup .personal-details label:nth-of-type(3),
+.signup .personal-details label:nth-of-type(4) {
+    flex-basis: 100%;
+}
+
+.signup .personal-details label input {
+    padding-left: 70px;
+}
+
+.signup .personal-details .fa {
+    color: #cdcdcd;
+    font-size: 160%;
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 22px 15px;
+    width: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+.signup .personal-details label input:focus + .fa {
+    background-color: #f7f7f7;
+    color: #58dd8e;
+}
+
+.signup .personal-details label input.error + .fa {
+    background-color: #f7f7f7;
+    color: #ffa097;
+}
+
+.signup .personal-details label span.error {
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    text-align: left;
+}
+
+.signup .terms {
+    text-align: left;
+    font-weight: 300;
+    margin: 35px 0;
+}
+
+.signup .terms span ~ span.error {
+    display: inline-block;
+    position: relative;
+    left: -270px;
+    top: 25px;
+    font-weight: 400;
+}
+input[type="checkbox"] + span.error {
+    border-color:red
+}
+
+.signup .signup-btn {
+    margin: 11px 0;
+}
+
+.signup .signup-btn {
+    margin: 22px 0;
+}
+
+.profiles-container {
+    text-align: center;
+    width: 100%;
+}
+
+.profiles {
+    width: 635px;
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+.profiles th {
+    background-color: #e8e8e8;
+}
+
+.profiles th,
+.profiles td {
+    padding: 20px;
+    border: 1px solid #e8e8e8;
+}
+
+@media all and (max-width: 800px) {
+    .signup {
+        width: 100%;
+    }
+    
+    .profiles {
+        width: 100%;
+    }
+}
